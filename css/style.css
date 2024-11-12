@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+/* this is my header section styles */
+header{
+  display: flex;
+  gap:60%;
+  width: 100%;
+  padding: 3%;
+  position: absolute;
+
+}
+header ul{
+  padding-left: 80%;
+  padding-top: 8%;
+  list-style: none;
+  font-size: x-large;
+  
+   
+}
+header ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+header img{
+  width: 80%;
+}
+/* my header section styles  end here  */
+/*  this is my off-sreen-menu styles */
+.off-screen-menu{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0%;
+  right:-450px;
+  display:flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content:center ;
+  text-align:center ;
+  font-size: 1rem;
+  transition:3s ease ;
+}
+.off-screen-menu .active{
+  right: 0;
+}
+nav{
+ 
+  display: flex;
+  column-gap: 105%;
+
+}
+.ham-menu{
+  height: 50px;
+  width: 50px;
+  margin-right: auto;
+  position: absolute;
+
+}
+.ham-menu span{
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate( -50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1){
+  top: 25%;
+
+}
+.ham-menu span:nth-child(3){
+ top:75%;
+}
+.ham-menu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+
+}
+.ham-menu.active span:nth-child(2){
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+
+}
+/* my .off-screen-menu syles end here  */
+
+
+
+/* this is my hero section styles  */
+#hero{
+width: 100%;
+height: 100vh;
+background-image: url(../IMAGES/Rectangle\ 1.png);
+background-position: center center;
+background-size: cover;
+
+}
+.hero-inner{
+  
+  display: flex;
+  color: #fff;
+  padding-top: 40%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero-inner  h1{
+  padding-left: 5%;
+}
+
+.hero-inner .link{
+  margin-left: 55%;
+}
+/* my hero section styles end here  */
+/* this is my about section styles  */
+#about{
+  text-align: center;
+  
+  background-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  
+}
+.about-inner{
+  padding:0 10%;
+  margin-top: 5%;
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  gap: 5%;
+}
+.about-inner .description{
+  text-align: left;
+  display: grid;
+  gap: 5%;
+}
+.about-inner .description p{
+  font-weight: 500;
+}
+.about-inner h4 span{
+  color: red;
+}
+/* my about section styles end here  */
+/* this is my services section styles */
+#services{
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+  
+}
+#services h1{
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#services-inner.services-cards{
+  display: inline;
+  column-gap: 3.5rem;
+  
+}
+#services-inner.servicescard-one h2{
+  width: 280px;
+  background-color: #fff;
+  padding: 2% 3%;
+  box-shadow: 0 8px 24px hsla (0, 0%, 0%, .15);
+ position: absolute;
+ border-radius:1rem;
+ bottom:-2rem ;
+ left:0 ;
+ right: 0;
+}
+
+
+
+/* my services section styles end here  */
+/* this is my image section styles  */
+#image img{
+  width: 100%;
+}
+/* my image section styles end here  */
+/* this is my testimonial section syles  */
+#testimonial{
+  padding: 5%;
+  margin: 0%;
+  display: grid;
+  align-content: space-between;
+  font-size: small;
+  font-weight: 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: grey;
+
+}
+.testimonial-inner .testimonialcards{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 5%;
+}
+.testimonial-inner .testimonialcards p{
+  text-align: center;
+  color: black;
+  font-size: larger;
+  font-weight: 100;
+  
+}
+.testimonial-inner.testimonialcards span{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+
+}
+/* my testimonial section styles end here  */
+/* this is my request section styles  */
+#request{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 5%;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+#request h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  
+
+}
+#request p{
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(107, 98, 98);
+
+}
+#request div form{
+  display: grid;
+  gap: 10%;
+}
+#request div form .InputText{
+  width: 200px;
+  margin: 0%;
+  border: none;
+  
+}
+#request div form .InputEmail{
+  width: 200px;
+   margin: 0%;
+   border: none;
+}
+#request div form .message{
+  padding: 0 20% 20% 0 ;
+  width: 100%;
+   margin: 0%;
+   border: none;
+  
+}
+/* my request section styles end here  */
+/* this is my footer section styles  */
+footer{
+  height: 50vh;
+  background-color: black;
+  display: grid;
+  text-align: center;
+}
+footer .footer-inner {
+  display: grid;
+
+}
+
+footer .footer-inner .footercards{
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-inner .footercards.h1{
+  font-size: medium;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+footer .footer-inner.footercards .p{
+  font-size: small;
+  font-weight: 100;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  gap: 5%;
+
+}
+footer .footer-inner .footercard{
+  display: grid;
+}
+footer .footer-inner .span{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* my footer section styles end here  */
